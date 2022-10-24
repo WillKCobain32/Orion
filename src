@@ -1,0 +1,25 @@
+import React from "react";
+import {BarChart, Bar, CartesianGrid, XAxis, YAxis} from 'recharts';
+
+const App => () {
+
+    //sample data
+    const data = [
+  {name: 'regiao sul', students, 40},
+  {name: 'regiao nordeste', students, 75},
+  {name: 'regiao norte', students, 90},
+  {name: 'regiao centrooeste', students, 30},
+  {name: 'regiao sudeste', students, 35},
+   ];
+
+   return (
+    <BarChart width={600}  Height={600} data={data}>
+    <Bar datakey="students" fill="green"/>
+    <CartesianGrid stroke="#ccc" />
+    <XAxis dataKey="name" />
+    <YAxis />
+    </BarChart>
+   );
+}
+
+export default App;
